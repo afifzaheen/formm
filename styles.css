@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://i.pinimg.com/originals/4e/1a/6e/4e1a6ecff36b62a77013d034cefb2c5d.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(35, 37, 35);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; 
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px; /* Adjusted padding for better spacing */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%; 
+  max-width: 800px; 
+  max-height: 90vh; 
+  overflow-y: hidden;
+}
+
+.address-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+}
+
+.address-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+  gap: 10px; 
+}
+
+.address-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.address-group .form-group {
+  flex: 1;
+}
+
+.address-group .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.address-group .form-group input {
+  width: 100%;
+  padding: 8px; 
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.9em;
+}
+
+input, select {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85em;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 3px;
+  display: block;
+}
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+#successMessage {
+  color: green;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%; 
+    padding: 15px; 
+
+  }
+
+  .address-group {
+    flex-direction: column; 
+    gap: 15px;
+  }
+
+  .address-row {
+    width: 100%; 
+    align-items: flex-start; 
+  }
+
+  h1 {
+    font-size: 1.2em; 
+  }
+
+  button {
+    padding: 12px; 
+  }
+}
+
+
